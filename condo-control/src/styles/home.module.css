@@ -1,0 +1,60 @@
+.waitingList {
+  display: flex;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border: 1px solid grey;
+  box-shadow: 1px black;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+}
+
+.waitingList:focus-within {
+  border: 1px solid black;
+  --tw-ring-opacity: 0.25;
+}
+
+.waitingList input {
+  outline: none;
+  display: flex;
+  flex: 1 1 0%;
+  padding: 0 0.75rem 0 1.5rem;
+  color: black;
+}
+
+.waitingList input {
+  letter-spacing: -0.2px;
+  background: transparent !important;
+}
+
+.waitingList button {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.waitingList button:hover {
+  background-color: grey;
+  transition-duration: 0.5s;
+}
+
+.waitingList + ul {
+  position: relative;
+  top: 1rem;
+}
+
+.waitingList + ul li {
+  color: black;
+  background-color: white;
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+}
+
+.waitingList + ul li:hover {
+  background-color: grey;
+}
